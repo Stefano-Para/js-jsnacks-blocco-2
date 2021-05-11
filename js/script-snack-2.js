@@ -28,20 +28,42 @@ var squadre = [
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+// var finalArray = [];
+// for (i = 0; i < squadre.length; i++) {
+//     squadre[i].punti_fatti = getRandomNumber(1, 10);
+//     squadre[i].falli_subiti = getRandomNumber(1, 10);
+//     //push dei nomi dentro array finale;
+//     var nomiSquadre = squadre[i].nome;
+//     console.log(nomiSquadre)
+//     finalArray.push(nomiSquadre)
+//     //push dei falli subiti dentro array finale
+//     var falli_subiti_squadre = squadre[i].falli_subiti;
+//     console.log(falli_subiti_squadre)
+//     finalArray.push("Ha subito: " + falli_subiti_squadre + " falli.")
+// }
+// console.log(squadre)
+// console.log(finalArray)
+// Infine creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 var finalArray = [];
 for (i = 0; i < squadre.length; i++) {
+
     squadre[i].punti_fatti = getRandomNumber(1, 10);
     squadre[i].falli_subiti = getRandomNumber(1, 10);
+
     //push dei nomi dentro array finale;
     var nomiSquadre = squadre[i].nome;
     console.log(nomiSquadre)
     finalArray.push(nomiSquadre)
+
     //push dei falli subiti dentro array finale
     var falli_subiti_squadre = squadre[i].falli_subiti;
     console.log(falli_subiti_squadre)
     finalArray.push("Ha subito: " + falli_subiti_squadre + " falli.")
+
 }
-console.log(squadre)
-console.log(finalArray)
-// Infine creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+console.log(squadre);
+console.log(finalArray);
+
+// come si può pushare l'oggetto intero cambiato di dati?
 
